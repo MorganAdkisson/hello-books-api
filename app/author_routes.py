@@ -62,7 +62,7 @@ def create_book(author_id):
 
     return make_response(jsonify(f"Book {new_book.title} by {new_book.author.name}"))
 
-@authors_bp.route("/<author_id/books", methods=["GET"])
+@authors_bp.route("/<author_id>/books", methods=["GET"])
 def get_all_books(author_id):
     author = validate_author(author_id)
 
