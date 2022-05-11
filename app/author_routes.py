@@ -1,4 +1,3 @@
-from attr import validate
 from app import db
 from app.models.author import Author
 from app.models.book import Book
